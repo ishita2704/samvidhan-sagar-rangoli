@@ -14,7 +14,7 @@ const HeroSection = () => {
       
       <div className="container mx-auto px-4 relative z-10 text-center">
         <ScrollAnimation animationClass="animate-fade-in">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gradient">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 heading-gradient">
             Nagrik Aur Samvidhan
           </h1>
         </ScrollAnimation>
