@@ -1,26 +1,17 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import ScrollAnimation from './ScrollAnimation';
-
 const HeroSection = () => {
-  return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src="/lovable-uploads/6b0a039a-afe1-4d16-9b74-85c798a67246.png" 
-          alt="Indian Parliament" 
-          className="w-full h-full object-cover"
-        />
+        <img src="/lovable-uploads/6b0a039a-afe1-4d16-9b74-85c798a67246.png" alt="Indian Parliament" className="w-full h-full object-cover" />
         <div className="absolute inset-0 hero-overlay bg-black/50 backdrop-blur-[2px]"></div>
       </div>
       
       <div className="container mx-auto px-4 relative z-10 text-center">
         <ScrollAnimation animationClass="animate-fade-in">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-            Citizens and Constitution
-          </h1>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">Nagrik Aur Samvidhan</h1>
         </ScrollAnimation>
         
         <ScrollAnimation animationClass="animate-fade-in" delay={300}>
@@ -31,7 +22,7 @@ const HeroSection = () => {
         
         <ScrollAnimation animationClass="animate-fade-in" delay={600}>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="cta-button text-lg">Get Started</Button>
+            <Button className="cta-button text-lg">Sign in</Button>
             <Button variant="outline" className="bg-white/10 backdrop-blur border-white/30 text-white hover:bg-white/20 text-lg">
               Learn More
             </Button>
@@ -50,8 +41,6 @@ const HeroSection = () => {
           </div>
         </ScrollAnimation>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
