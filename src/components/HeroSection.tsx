@@ -2,7 +2,6 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import ScrollAnimation from './ScrollAnimation';
-import { GradualSpacing } from '@/components/ui/gradual-spacing';
 
 const HeroSection = () => {
   return (
@@ -10,20 +9,14 @@ const HeroSection = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img src="/lovable-uploads/6b0a039a-afe1-4d16-9b74-85c798a67246.png" alt="Indian Parliament" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 hero-overlay bg-black/30 backdrop-blur-[1px]"></div>
+        <div className="absolute inset-0 hero-overlay bg-black/40 backdrop-blur-[2px]"></div>
       </div>
       
       <div className="container mx-auto px-4 relative z-10 text-center">
         <ScrollAnimation animationClass="animate-fade-in">
-          <GradualSpacing 
-            text="Nagrik Aur Samvidhan"
-            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 heading-gradient font-playfair"
-            duration={0.7}
-            framerProps={{
-              hidden: { opacity: 0, y: -15 },
-              visible: { opacity: 1, y: 0 },
-            }}
-          />
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 heading-gradient">
+            Nagrik Aur Samvidhan
+          </h1>
         </ScrollAnimation>
         
         <ScrollAnimation animationClass="animate-fade-in" delay={300}>
