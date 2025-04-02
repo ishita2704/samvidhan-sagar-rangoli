@@ -16,13 +16,12 @@ const HeroSection = () => {
         
         <ScrollAnimation animationClass="animate-fade-in" delay={300}>
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
-            Learn about the Indian Constitution in a fun and interactive way!
-          </p>
+Trouble understanding the constituition? We've got a fun and easy way to learn!</p>
         </ScrollAnimation>
         
         <ScrollAnimation animationClass="animate-fade-in" delay={600}>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="cta-button text-lg">Sign in</Button>
+            <Button className="cta-button text-lg">Start Learning</Button>
             <Button variant="outline" className="bg-white/10 backdrop-blur border-white/30 text-white hover:bg-white/20 text-lg">
               Learn More
             </Button>
