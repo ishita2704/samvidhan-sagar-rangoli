@@ -69,7 +69,7 @@
   }
 
   .hero-overlay {
-    background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.7) 100%);
   }
 
   .interactive-card {
@@ -96,6 +96,15 @@
   .secondary-button {
     @apply px-6 py-3 bg-royalblue text-white font-semibold rounded-md hover:bg-opacity-90 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5;
   }
+
+  /* Modern glassmorphism effects */
+  .glass-card {
+    @apply bg-white/30 backdrop-blur-md border border-white/20 rounded-xl shadow-lg;
+  }
+
+  .modern-button {
+    @apply rounded-full px-8 py-3 bg-gradient-to-r from-terracotta to-sandstone text-white font-medium shadow-lg transition-transform hover:scale-105;
+  }
 }
 
 /* Custom scrollbar */
@@ -120,4 +129,23 @@
   max-width: 100%;
   margin: 0;
   padding: 0;
+}
+
+/* Modern animation additions */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Enhanced text effects */
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.text-glow {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }

@@ -9,31 +9,31 @@ const HeroSection = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/lovable-uploads/fef6d2c0-08f6-4935-8003-d3205e824b29.png" 
+          src="/lovable-uploads/6b0a039a-afe1-4d16-9b74-85c798a67246.png" 
           alt="Indian Parliament" 
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 hero-overlay"></div>
+        <div className="absolute inset-0 hero-overlay bg-black/50 backdrop-blur-[2px]"></div>
       </div>
       
       <div className="container mx-auto px-4 relative z-10 text-center">
         <ScrollAnimation animationClass="animate-fade-in">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-            नागरिक और संविधान
+            Citizens and Constitution
           </h1>
         </ScrollAnimation>
         
         <ScrollAnimation animationClass="animate-fade-in" delay={300}>
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
-            भारतीय संविधान के बारे में मज़ेदार और इंटरैक्टिव तरीके से सीखिए!
+            Learn about the Indian Constitution in a fun and interactive way!
           </p>
         </ScrollAnimation>
         
         <ScrollAnimation animationClass="animate-fade-in" delay={600}>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="cta-button text-lg">अभी शुरू करें</Button>
+            <Button className="cta-button text-lg">Get Started</Button>
             <Button variant="outline" className="bg-white/10 backdrop-blur border-white/30 text-white hover:bg-white/20 text-lg">
-              और जानें
+              Learn More
             </Button>
           </div>
         </ScrollAnimation>

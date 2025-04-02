@@ -10,38 +10,38 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <BookOpen className="text-terracotta" size={28} />
-              <span className="font-bold text-xl text-terracotta">नागरिक और संविधान</span>
+              <span className="font-bold text-xl text-terracotta">Citizens and Constitution</span>
             </div>
             <p className="text-gray-600">
-              संविधान के बारे में जानने का मज़ेदार और इंटरैक्टिव तरीका।
+              A fun and interactive way to learn about the Constitution.
             </p>
           </div>
           
           <div>
-            <h3 className="font-bold text-lg mb-4">उपयोगी लिंक</h3>
+            <h3 className="font-bold text-lg mb-4">Useful Links</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-600 hover:text-terracotta transition-colors">मुख्य पृष्ठ</a></li>
-              <li><a href="#features" className="text-gray-600 hover:text-terracotta transition-colors">विशेषताएं</a></li>
-              <li><a href="#principles" className="text-gray-600 hover:text-terracotta transition-colors">संवैधानिक सिद्धांत</a></li>
-              <li><a href="#explore" className="text-gray-600 hover:text-terracotta transition-colors">अन्वेषण</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-terracotta transition-colors">Home</a></li>
+              <li><a href="#features" className="text-gray-600 hover:text-terracotta transition-colors">Features</a></li>
+              <li><a href="#principles" className="text-gray-600 hover:text-terracotta transition-colors">Constitutional Principles</a></li>
+              <li><a href="#explore" className="text-gray-600 hover:text-terracotta transition-colors">Explore</a></li>
             </ul>
           </div>
           
           <div>
-            <h3 className="font-bold text-lg mb-4">जानकारी</h3>
+            <h3 className="font-bold text-lg mb-4">Information</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-600 hover:text-terracotta transition-colors">हमारे बारे में</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-terracotta transition-colors">प्राइवेसी पॉलिसी</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-terracotta transition-colors">संपर्क करें</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-terracotta transition-colors">अक्सर पूछे जाने वाले प्रश्न</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-terracotta transition-colors">About Us</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-terracotta transition-colors">Privacy Policy</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-terracotta transition-colors">Contact Us</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-terracotta transition-colors">FAQ</a></li>
             </ul>
           </div>
           
           <div>
-            <h3 className="font-bold text-lg mb-4">संपर्क</h3>
+            <h3 className="font-bold text-lg mb-4">Contact</h3>
             <ul className="space-y-2">
-              <li className="text-gray-600">info@nagrikaursamvidhan.org</li>
-              <li className="text-gray-600">दिल्ली, भारत</li>
+              <li className="text-gray-600">info@citizensandconstitution.org</li>
+              <li className="text-gray-600">Delhi, India</li>
               <li className="text-gray-600">+91-123-456-7890</li>
             </ul>
           </div>
@@ -49,7 +49,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-200 pt-8 text-center">
           <p className="text-gray-600">
-            &copy; {new Date().getFullYear()} नागरिक और संविधान। सभी अधिकार सुरक्षित हैं।
+            &copy; {new Date().getFullYear()} Citizens and Constitution. All Rights Reserved.
           </p>
         </div>
       </div>

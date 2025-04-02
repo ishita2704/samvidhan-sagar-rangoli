@@ -8,23 +8,23 @@ const FeaturesSection = () => {
   const features = [
     {
       icon: <BookOpen className="h-10 w-10 text-terracotta" />,
-      title: "इंटरैक्टिव पाठ्यक्रम",
-      description: "संविधान के मूलभूत सिद्धांतों को इंटरैक्टिव और आसान पाठ्यक्रम के माध्यम से सीखें।"
+      title: "Interactive Courses",
+      description: "Learn the fundamental principles of the constitution through interactive and easy-to-follow courses."
     },
     {
       icon: <Search className="h-10 w-10 text-terracotta" />,
-      title: "संविधान खोज",
-      description: "भारतीय संविधान के किसी भी अनुच्छेद या अध्याय को आसानी से खोजें और समझें।"
+      title: "Constitution Explorer",
+      description: "Easily search and understand any article or chapter of the Indian Constitution."
     },
     {
       icon: <Check className="h-10 w-10 text-terracotta" />,
-      title: "ज्ञान परीक्षण",
-      description: "रोचक क्विज और प्रश्नोत्तरी के माध्यम से अपने संवैधानिक ज्ञान का परीक्षण करें।"
+      title: "Knowledge Testing",
+      description: "Test your constitutional knowledge through engaging quizzes and questionnaires."
     },
     {
       icon: <Info className="h-10 w-10 text-terracotta" />,
-      title: "केस स्टडी",
-      description: "महत्वपूर्ण संवैधानिक मामलों के अध्ययन से संविधान के व्यावहारिक पहलुओं को समझें।"
+      title: "Case Studies",
+      description: "Understand the practical aspects of the Constitution through important constitutional case studies."
     }
   ];
 
@@ -33,11 +33,11 @@ const FeaturesSection = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <ScrollAnimation animationClass="animate-fade-in">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">हमारी विशेषताएं</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Features</h2>
           </ScrollAnimation>
           <ScrollAnimation animationClass="animate-fade-in" delay={200}>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-              संविधान के बारे में सीखने के लिए हमारे इंटरैक्टिव और मनोरंजक टूल्स का अनुभव लें।
+              Experience our interactive and engaging tools for learning about the Constitution.
             </p>
           </ScrollAnimation>
         </div>

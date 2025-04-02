@@ -7,26 +7,26 @@ const PrinciplesSection = () => {
   const principles = [
     {
       id: "justice",
-      title: "न्याय",
-      content: "सामाजिक, आर्थिक और राजनीतिक न्याय भारतीय संविधान का एक मूलभूत सिद्धांत है। यह हर नागरिक को समान अवसर और अधिकार सुनिश्चित करता है।",
+      title: "Justice",
+      content: "Social, economic, and political justice is a fundamental principle of the Indian Constitution. It ensures equal opportunities and rights for every citizen.",
       icon: "⚖️"
     },
     {
       id: "liberty",
-      title: "स्वतंत्रता",
-      content: "भारतीय संविधान हर नागरिक को अभिव्यक्ति, विश्वास, धर्म और उपासना की स्वतंत्रता प्रदान करता है। ये स्वतंत्रताएं लोकतंत्र की आधारशिला हैं।",
+      title: "Liberty",
+      content: "The Indian Constitution provides every citizen with liberty of expression, belief, faith, and worship. These liberties are the cornerstone of democracy.",
       icon: "🕊️"
     },
     {
       id: "equality",
-      title: "समानता",
-      content: "कानून के समक्ष समानता और अवसर की समानता भारतीय संविधान के मुख्य लक्ष्य हैं। संविधान जाति, धर्म, लिंग या जन्म स्थान के आधार पर भेदभाव को प्रतिबंधित करता है।",
+      title: "Equality",
+      content: "Equality before law and equality of opportunity are the main goals of the Indian Constitution. The Constitution prohibits discrimination based on caste, religion, gender, or place of birth.",
       icon: "🤝"
     },
     {
       id: "fraternity",
-      title: "बंधुत्व",
-      content: "राष्ट्र की एकता और अखंडता सुनिश्चित करने के लिए बंधुत्व की भावना आवश्यक है। संविधान व्यक्ति की गरिमा और राष्ट्र की एकता को बढ़ावा देता है।",
+      title: "Fraternity",
+      content: "The spirit of brotherhood is essential to ensure the unity and integrity of the nation. The Constitution promotes the dignity of the individual and the unity of the nation.",
       icon: "🫶"
     }
   ];
@@ -38,11 +38,11 @@ const PrinciplesSection = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <ScrollAnimation animationClass="animate-fade-in">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">संवैधानिक सिद्धांत</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Constitutional Principles</h2>
           </ScrollAnimation>
           <ScrollAnimation animationClass="animate-fade-in" delay={200}>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-              भारतीय संविधान की प्रस्तावना में वर्णित मूल सिद्धांत जो हमारे लोकतांत्रिक गणराज्य की नींव हैं।
+              Core principles described in the Preamble of the Indian Constitution that form the foundation of our democratic republic.
             </p>
           </ScrollAnimation>
         </div>
