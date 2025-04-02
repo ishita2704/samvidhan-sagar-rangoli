@@ -117,6 +117,7 @@ export default {
             fontFamily: {
                 'poppins': ['Poppins', 'sans-serif'],
                 'hindi': ['Hind', 'sans-serif'],
+                'playfair': ['Playfair Display', 'serif'],
             },
             backgroundImage: {
                 'hero-pattern': "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2))"

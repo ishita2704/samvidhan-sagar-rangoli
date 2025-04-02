@@ -1,9 +1,12 @@
+
 import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { BookOpen, Menu, X } from "lucide-react";
+
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -17,21 +20,21 @@ const Navbar = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-  return <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-cream/95 backdrop-blur shadow-md py-2' : 'bg-transparent py-4'}`}>
+
+  return (
+    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-cream/95 backdrop-blur shadow-md py-2' : 'bg-black/30 backdrop-blur-md py-4'}`}>
       <div className="container mx-auto flex justify-between items-center px-4">
         <a href="#" className="flex items-center gap-2">
           <BookOpen className="text-terracotta" size={28} />
-          <span className="font-bold text-xl text-terracotta">
-
-        </span>
+          <span className="font-bold text-xl text-terracotta">Nagrik Aur Samvidhan</span>
         </a>
         
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-6">
-          <a href="#home" className="font-medium hover:text-terracotta transition-colors">Home</a>
-          <a href="#features" className="font-medium hover:text-terracotta transition-colors">Features</a>
-          <a href="#principles" className="font-medium hover:text-terracotta transition-colors">Constitutional Principles</a>
-          <a href="#explore" className="font-medium hover:text-terracotta transition-colors">Explore</a>
+          <a href="#home" className="font-medium text-white hover:text-terracotta transition-colors">Home</a>
+          <a href="#features" className="font-medium text-white hover:text-terracotta transition-colors">Features</a>
+          <a href="#principles" className="font-medium text-white hover:text-terracotta transition-colors">Constitutional Principles</a>
+          <a href="#explore" className="font-medium text-white hover:text-terracotta transition-colors">Explore</a>
           <Button className="bg-terracotta hover:bg-terracotta/90">Get Started</Button>
         </div>
         
@@ -51,6 +54,8 @@ const Navbar = () => {
           <Button className="bg-terracotta hover:bg-terracotta/90 w-full" onClick={() => setMobileMenuOpen(false)}>Get Started</Button>
         </div>
       </div>
-    </nav>;
+    </nav>
+  );
 };
+
 export default Navbar;

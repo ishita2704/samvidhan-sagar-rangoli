@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Hind:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Hind:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -59,7 +59,7 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-bold text-terracotta;
+    @apply font-bold text-terracotta font-playfair;
   }
 }
 
@@ -69,7 +69,7 @@
   }
 
   .hero-overlay {
-    background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.7) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.5) 100%);
   }
 
   .interactive-card {
@@ -104,6 +104,17 @@
 
   .modern-button {
     @apply rounded-full px-8 py-3 bg-gradient-to-r from-terracotta to-sandstone text-white font-medium shadow-lg transition-transform hover:scale-105;
+  }
+  
+  /* Gradient text effect */
+  .text-gradient {
+    @apply font-playfair font-bold;
+    background: linear-gradient(90deg, #BC6C25 0%, #E5A062 50%, #BC6C25 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   }
 }
 
