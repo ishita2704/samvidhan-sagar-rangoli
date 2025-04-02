@@ -1,11 +1,8 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import ScrollAnimation from './ScrollAnimation';
-
 const HeroSection = () => {
-  return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img src="/lovable-uploads/6b0a039a-afe1-4d16-9b74-85c798a67246.png" alt="Indian Parliament" className="w-full h-full object-cover" />
@@ -27,7 +24,7 @@ const HeroSection = () => {
         
         <ScrollAnimation animationClass="animate-fade-in" delay={600}>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="cta-button text-lg">Start Learning</Button>
+            <Button className="cta-button text-lg bg-[#b86b12]">Start Learning</Button>
             <Button variant="outline" className="bg-white/20 backdrop-blur border-white/40 text-white hover:bg-white/30 text-lg">
               Explore Resources
             </Button>
@@ -46,8 +43,6 @@ const HeroSection = () => {
           </div>
         </ScrollAnimation>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
