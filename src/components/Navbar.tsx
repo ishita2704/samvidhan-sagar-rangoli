@@ -1,12 +1,9 @@
-
 import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { BookOpen, Menu, X } from "lucide-react";
-
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -20,13 +17,13 @@ const Navbar = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
-  return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-cream/95 backdrop-blur shadow-md py-2' : 'bg-black/30 backdrop-blur-md py-4'}`}>
+  return <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-cream/95 backdrop-blur shadow-md py-2' : 'bg-black/30 backdrop-blur-md py-4'}`}>
       <div className="container mx-auto flex justify-between items-center px-4">
         <a href="#" className="flex items-center gap-2">
           <BookOpen className="text-terracotta" size={28} />
-          <span className="font-bold text-xl text-terracotta">Nagrik Aur Samvidhan</span>
+          <span className="font-bold text-xl text-terracotta">
+
+        </span>
         </a>
         
         {/* Desktop Menu */}
@@ -54,8 +51,6 @@ const Navbar = () => {
           <Button className="bg-terracotta hover:bg-terracotta/90 w-full" onClick={() => setMobileMenuOpen(false)}>Get Started</Button>
         </div>
       </div>
-    </nav>
-  );
+    </nav>;
 };
-
 export default Navbar;
