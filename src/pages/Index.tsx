@@ -7,7 +7,7 @@ import FeaturesSection from '@/components/FeaturesSection';
 import PrinciplesSection from '@/components/PrinciplesSection';
 import ExploreSection from '@/components/ExploreSection';
 import CtaSection from '@/components/CtaSection';
-import MyFooter from '@/components/myfooter';
+import MyFooter from '@/components/MyFooter';
 
 const Index = () => {
   useEffect(() => {
