@@ -1,11 +1,10 @@
-
 import React, { useState } from 'react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Check } from 'lucide-react';
 import ScrollAnimation from './ScrollAnimation';
 
-const ExploreSection = () => {
+ const ExploreSection = () => {
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
   
@@ -19,7 +18,7 @@ const ExploreSection = () => {
     setIsCorrect(null);
   };
 
-  return (
+return (
     <section id="explore" className="section-padding relative">
       <div className="absolute inset-0 opacity-10 z-0">
         <img 
