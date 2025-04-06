@@ -19,8 +19,6 @@ import {
   Sparkles,
 } from "lucide-react";
 import { TextShimmerWave } from "@/components/ui/text-shimmer-wave";
-
-
 import {
   FaRobot,
   FaUsers,
@@ -35,7 +33,7 @@ import { TextRevealByWord } from "@/components/ui/text-reveal";
 import ScrollAnimation from "./ScrollAnimation";
 import { cn } from "@/lib/utils";
 import { Typewriter } from "@/components/ui/typewriter-text";
-
+import GamesSection from "./GameSection"; // Make sure to import your GamesSection
 
 const FeaturesSection = () => {
   const features = [
@@ -44,30 +42,30 @@ const FeaturesSection = () => {
       title: "AI Sewak",
       description:
         "AI-powered chatbot that provides easy-to-understand answers to queries related to the Constitution of India.",
+      link: "https://sewak-ai.onrender.com",
+      external: true,
     },
     {
       icon: <FaUsers className="h-10 w-10 text-terracotta" />,
       title: "Collaborative Learning",
       description:
         "Form teams to debate constitutional issues, fostering interactive discussions and deeper understanding.",
+      link: "https://preview--india-law-arena.lovable.app/",
     },
     {
       icon: <FaQuestionCircle className="h-10 w-10 text-terracotta" />,
       title: "Daily Quiz - POTD",
       description:
         "Test your knowledge with a daily 'Problem of the Day' quiz on constitutional topics.",
+      link: "https://bharat-quiz-scrolls.lovable.app/",
+      external: true, // Make sure this is properly set
     },
-    // {
-    //   icon: <FaCertificate className="h-10 w-10 text-terracotta" />,
-    //   title: "Blockchain Certification",
-    //   description:
-    //     "Earn blockchain-verified certificates upon completing constitutional modules.",
-    // },
     {
       icon: <FaCertificate className="h-10 w-10 text-terracotta" />,
-      title: "interactive Learning Games",
+      title: "Interactive Learning Games",
       description:
         "Engage with fun and educational games designed to simplify constitutional concepts and make learning an enjoyable experience.",
+      link: "/games",
     },
   ];
 
@@ -77,30 +75,34 @@ const FeaturesSection = () => {
       title: "Constitution Time Machine",
       description:
         "Explore how constitutional articles have evolved over time with our interactive timeline.",
+      link: "/timeline",
     },
     {
       icon: <FaExclamationTriangle className="h-4 w-4" />,
       title: "SOS Emergency Feature",
-      description:
-        "Quick-access emergency feature providing crucial legal information in urgent situations.",
+      description: "Quick legal information access.",
+      link: "https://civic-sos-connect.lovable.app",
     },
     {
-      icon: <FaGamepad className="h-10 w-10 text-terracotta" />,
+      icon: <FaGamepad className="h-4 w-4" />,
       title: "Interactive Learning Games",
       description:
-        "Engage with fun and educational games designed to simplify constitutional concepts and make learning an enjoyable experience.",
+        "Engage with fun and educational games designed to simplify constitutional concepts.",
+      link: "/games", // Link to the GamesSection
     },
     {
       icon: <Search className="h-4 w-4" />,
       title: "Constitution Explorer",
       description:
         "Easily search and understand any article or chapter of the Indian Constitution.",
+        link: "/articles",
     },
     {
       icon: <Check className="h-4 w-4" />,
       title: "Knowledge Testing",
       description:
         "Test your constitutional knowledge through engaging quizzes.",
+      link:"/knowledge"
     },
   ];
 
@@ -113,7 +115,6 @@ const FeaturesSection = () => {
               className="font-display text-center text-4xl font-bold -tracking-widest text-orange-900 dark:text-white md:text-7xl md:leading-[5rem]"
               text="Our Features"
             />
-            
           </ScrollAnimation>
           <ScrollAnimation animationClass="animate-fade-in" delay={200}>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
@@ -132,21 +133,20 @@ const FeaturesSection = () => {
               style={{ animationDelay: `${200 + index * 100}ms` }}
             >
               <a
-                href={`#${feature.title.toLowerCase().replace(/\s+/g, "-")}`}
+                href={
+                  feature.link ||
+                  `#${feature.title.toLowerCase().replace(/\s+/g, "-")}`
+                }
                 className="block h-full focus:outline-none"
               >
                 <Card className="constitution-card h-full group relative overflow-hidden border border-gray-200 rounded-xl transition-all duration-300 hover:scale-[1.02] hover:shadow-lg bg-white">
-                  {/* Gradient Border Effect - Reduced blur */}
                   <div className="absolute inset-0 bg-gradient-to-r from-orange-100/50 via-transparent to-orange-100/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm"></div>
 
                   <CardHeader className="relative z-10 p-4">
                     <div className="flex justify-between items-start">
-                      {/* Icon Container */}
                       <div className="p-3 rounded-lg bg-orange-50 text-orange-500">
                         {feature.icon}
                       </div>
-
-                      {/* Arrow Indicator */}
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -163,14 +163,10 @@ const FeaturesSection = () => {
                         <polyline points="12 5 19 12 12 19"></polyline>
                       </svg>
                     </div>
-
-                    {/* Title */}
                     <CardTitle className="mt-3 text-lg font-semibold text-gray-800 group-hover:text-orange-500 transition-colors">
                       {feature.title}
                     </CardTitle>
                   </CardHeader>
-
-                  {/* Description */}
                   <CardContent className="relative z-10 px-4 pb-4">
                     <p className="text-gray-600 text-sm leading-snug">
                       {feature.description}
@@ -216,7 +212,7 @@ const FeaturesSection = () => {
 
               return (
                 <li key={index} className={cn("min-h-[14rem] list-none", area)}>
-                  <a href={""} className="block h-full group">
+                  <a href={feature.link || ""} className="block h-full group">
                     <div className="relative h-full rounded-[1.25rem] border-[0.75px] border-border p-2 md:rounded-[1.5rem] md:p-3 hover:shadow-xl transition-shadow duration-300">
                       <GlowingEffect
                         spread={40}
